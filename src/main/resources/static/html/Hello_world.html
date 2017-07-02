@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" href="../css/Hello_world.css">
+    <script src="../js/image_function.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/cmd.js"></script>
+</head>
+<body>
+<script>
+    document.write("<h1 id ='a'>Silver's Holly Land</h1>");
+</script>
+
+<div id="checkIn" , class="center">
+    <p>UserName:<input id="userName"/></p>
+    <p>Password:<input id="password" type="password"/></p>
+    <div id="prompt">
+        <p style="color: blue">Sign in to enjoy full content!</p>
+    </div>
+    <div class="center" align="center">
+        <button id="signInButton" type="button" onclick="checkIn()">点击这里</button>
+    </div>
+</div>
+
+<div id="secret">
+    <div id="welcome" class="center">
+        <p class="frame">Welcome Silver!</p>
+        <div id="picframe">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496981878753&di=fe85ad7d72f464c155b28d1a7f70f7e4&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D2200471275%2C2049828337%26fm%3D214%26gp%3D0.jpg"
+                 alt="situmi"
+                 width="200" height="294">
+        </div>
+        <a href="Hello_world.html#mail">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496982170367&di=5c337b9637682b5607555f9b3702c405&imgtype=0&src=http%3A%2F%2Fimg01.taopic.com%2F151101%2F240420-1511010Q50041.jpg"
+                 alt="mail"
+                 width="24" height="30">
+        </a>
+    </div>
+    <script>
+        getTestBean();
+        getTestBean();
+        $("#welcome").fadeOut(0);
+    </script>
+
+    <div class="center" align="center">
+        <button id="alertButton" type="button" onclick="checkIn()">点击这里</button>
+    </div>
+
+    <script>
+        function myFunction() {
+            x = document.getElementById("alertButton");//找到元素
+            x.outerHTML = x.outerHTML + "<button id=\"alertButton\" type=\"button\" onclick=\"myFunction()\">点</button>"
+            //x.innerHTML="Finished!";// 改变内容
+        }
+    </script>
+
+
+    <!--导航栏布局-->
+    <div id="header">
+        <h1>Character Gallery</h1>
+    </div>
+
+    <div id="nav">
+
+        <div id="Situmi" style="cursor: pointer">濑津美</div>
+
+        <div id="Nagisa" style="cursor: pointer">古河·渚</div>
+
+        <div id="Misuzu" style="cursor: pointer">神尾·观铃</div>
+
+        <div id="RockPaperScissors" style="cursor: pointer">石头剪刀布~</div>
+
+        <div id="TestBean" style="cursor: pointer">获得json</div>
+
+    </div>
+
+    <div id="section">
+
+    </div>
+
+    <div id="footer">
+        Enjoy yourself here!
+    </div>
+</div>
+
+
+<!--导航栏布局 END!-->
+
+<p>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+    <a name='mail'></a>
+    This is my mail：<br/>
+    <a href="mailto:827011867@qq.com?subject=Hello%20silver">send a letter to me</a>
+</p>
+</body>
+<script>
+    imageIn();
+    $("#picframe").slideToggle("slow");
+    changeCharacter();
+    //$("#welcome").fadeIn(2000);
+</script>
+</html>
